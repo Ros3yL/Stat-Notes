@@ -4,4 +4,39 @@ author: Logan | Nick
 output: github_document
 ---
 
-# First line of Chapter 1
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# 1.1 Populations, Samples, and Processes
+
+Statistics provides methods for organizing and summarizing data and for drawing conclusions from that data
+
+Def
+---
+
+Data : a collection of facts
+
+Def
+---
+
+Population : A well defined collection of objects for which we wish to obtain info
+
+Def
+---
+
+Census : When desired info is obtained from every member of the population
+
+ - problems : Time, money, practical
+
+Def
+---
+
+Sample : A subset of the population
+
+Ex 1 : 
+---
+
+You want the home price in Edwardsville
+
+ - Fewer well trained appraisers gives better results than many poorly trained 
