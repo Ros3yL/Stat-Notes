@@ -2,6 +2,7 @@
 title: "Chapter 1"
 author: Logan | Nick
 output: github_document
+fontsize: 12pt
 ---
 
 ```{r setup, include=FALSE}
@@ -115,11 +116,11 @@ Labor force, sample 60,000, find population  + sample
 
 ## Notate
 
-sample size : $n$
+### sample size : $n$
 
  - For a dataset with $n$ observations on some variable $x$, the individual observations will be denoted as $x_1, x_2, \ldots, x_n$.
 
-#1.2 
+# 1.2 
 
 ## Stem and leaf plots 
 
@@ -143,4 +144,129 @@ mlb16.data <- read.csv("https://raw.githubusercontent.com/jpailden/rstatlab/mast
 dotPlot(~BatAge, data = mlb16.data)
 ```
 
+## Histograms
+\color{red} left blank for nick to fill in
 
+\color{black}
+
+## Skewed (Right and left)
+\color{red} add a dataset to show?
+
+\color{black}
+
+
+## Bell
+\color{red} add a dataset to show?
+
+\color{black}
+
+## Flat uniform
+\color{red} add a dataset to show?
+
+\color{black}
+
+## nonsymmetric
+\color{red} add a dataset to show?
+
+\color{black}
+
+## bimodal symmetric
+\color{red} add a dataset to show?
+
+\color{black}
+
+# 1.3
+
+Def
+---
+mean : numerical value of average
+
+Notate 
+
+### Sample mean : $\overline{x}$
+\[
+\overline{x} = \frac{x_1 + x_2 + \ldots + x_n}{n} = \frac{\sum\limits_{i=1}^{n} x_i}{n}
+\] 
+
+Notate
+
+### Population mean : $\mu$
+
+- avg of all values in the entire pop. 
+
+Ex
+---
+
+$2, 2, 5, 3, 8, 9, 2, 3, 1$
+ \[
+\overline{x} = \frac{\sum\limits_{i=1}^{10} x_i}{10} = 3.6
+\] 
+
+The mean is inappropriate in some cases b/c of outliers.
+
+- this makes the mean a **nonresistant measure**  
+
+Def
+---
+
+Median : middle value /avg of 2 middle values when sorted
+
+Notate
+
+Median : $\widetilde{x}$ 
+
+- if $n = odd$, median is at $\dfrac{n + 1}{2}$ 
+
+- if $n = even$ median are b/n $\dfrac{n}{2}$ & $\dfrac{n + 1}{2}$ 
+
+Notate
+
+Population Mean : $\widetilde{\mu}$
+
+# 1.4 Measures of Variability
+
+One way to describe a distribution is by using the standard deviation
+
+## Quartiles
+
+-  $Q_1$ - lower quartile separates bottom $25\%$
+-  $Q_2$ - median middle $50\%$
+-  $Q_3$ - upper quartile separates upper $25\%$
+
+Ex
+---
+
+2, 2, 5, 1, 3, 8, 9, 2, 31
+
+SORT
+\begin{align*}
+    1, 1, 2, 2, 2 \\
+    3, 3, 5, 8, 9
+\end{align*}
+$\widetilde{x} = 2 + 3 = 2.5$
+
+## Five number summary
+
+- Find min, $Q_1$, median, $Q_3$, max
+
+Note : If median is found in list, use it in both top half and lower half.
+
+Ex : 2 2 5 1 3 8 9 2 3 1 100
+
+$\overline{x} = \frac{36 + 100}{11} \approx 12.36$ 
+
+Sort to find median. $\widetilde{x} = 3$.
+
+## Mean vs. Median
+
+- median is the equal parts point
+
+- mean is the balance point
+
+Notate
+
+### Trimmed mean : $\overline{x}_{tr}$
+ 
+- compromise b/n the mean & median
+
+- to find it, remove top & bottom $10\%$, then calculate the mean
