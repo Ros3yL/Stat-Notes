@@ -88,14 +88,14 @@ Labor force, sample 60,000, find population  + sample
 
  - population = labor force, sample size = 60,000 households
 
-# Branches of Stats
+## Branches of Stats
 1. Descriptive Stats : data are collected and you wish to summarize and describe features of the data (graphs, numerical summaries)
 
 2. Inferential stats : data is collected from a sample and used to draw a conclusion about the population
 
     - confidence intervals, hypothesis test, prediction, etc...
 
-# Types of sampling
+## Types of sampling
 
 - Simple random sampling : random choice / draw of the hat sampling
 
@@ -113,3 +113,21 @@ Labor force, sample 60,000, find population  + sample
 sample size : $n$
 
  - For a dataset with $n$ observations on some variable $x$, the individual observations will be denoted as $x_1, x_2, \ldots, x_n$.
+
+#1.2 
+
+stem and leaf plots 
+
+Ex
+---
+
+$(54, 59, 35, 41, 46, 25, 47, 60, 54, 46, 49, 46, 41, 34, 22)$
+
+During these problems it helps to first orgranize the numebrs in the list first
+\begin{align*}
+    2 &\mid 2, 5 \\
+    3 &\mid 4, 5 \\
+    4 &\mid 1, 1, 6, 6, 6, 7, 9 \\
+    5 &\mid 4, 4, 9 \\
+    6 &\mid 0
+\end{align*}
