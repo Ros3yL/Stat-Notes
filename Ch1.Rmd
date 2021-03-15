@@ -34,9 +34,25 @@ Def
 
 Sample : A subset of the population
 
-Ex 1 : 
+1. 
 ---
 
 You want the home price in Edwardsville
 
  - Fewer well trained appraisers gives better results than many poorly trained 
+
+2. Tree Age Study
+---
+
+Testing is destructive, so a sample is better
+
+Def
+---
+
+variable : any characteristic whose clue may differ from one subhect to another.
+
+ - denote with low letters
+**Note** 
+    
+    - Don't say $McDonald's = 10$
+    - Do say $x = $ the length of the tibia bone in 10 year old boys.
