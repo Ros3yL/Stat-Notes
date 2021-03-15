@@ -5,7 +5,12 @@ output: github_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(fig.width=6, fig.height=4, fig.align="center", echo = FALSE)
+```
+
+```{r message=FALSE}
+if (!require(mosaic)) install.packages("mosaic", repos = 'https://cloud.r-project.org')
+library(mosaic) # load the package mosaic to use its functions
 ```
 
 # 1.1 Populations, Samples, and Processes
@@ -116,7 +121,7 @@ sample size : $n$
 
 #1.2 
 
-stem and leaf plots 
+## Stem and leaf plots 
 
 Ex
 ---
@@ -131,3 +136,11 @@ During these problems it helps to first orgranize the numebrs in the list first
     5 &\mid 4, 4, 9 \\
     6 &\mid 0
 \end{align*}
+
+## Dot plots
+```{r}
+mlb16.data <- read.csv("https://raw.githubusercontent.com/jpailden/rstatlab/master/data/MLB-TeamBatting-S16.csv")
+dotPlot(~BatAge, data = mlb16.data)
+```
+
+
