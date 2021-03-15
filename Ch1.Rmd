@@ -1,1 +1,7 @@
+---
+title: "Chapter 1"
+author: Logan | Nick
+output: github_document
+---
+
 # First line of Chapter 1
