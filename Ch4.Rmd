@@ -1,1 +1,18 @@
-added chapter 4
+---
+title: "Chapter 1"
+author: Logan | Nick
+output: github_document
+fontsize: 12pt
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(fig.width=6, fig.height=4, fig.align="center", echo = FALSE)
+```
+
+```{r message=FALSE}
+if (!require(mosaic)) install.packages("mosaic", repos = 'https://cloud.r-project.org')
+library(mosaic) # load the package mosaic to use its functions
+```
+
+# 4.1
+
