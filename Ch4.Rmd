@@ -27,14 +27,14 @@ A continuous RV is one in which each of the following is true
 
 
 \[
-P(a\leq X\leq b) = P(a< X\le b) = P(a\le X < b)
+P(a \le X \le b) = P(a < X \le b) = P(a \le X < b)
 \]
 
   * The pdf can not be listed as a table due to the "number" of outcomes 
   
 The pdf of a continuous random variable X given by f(x) and has the following properties
 
-1. $f(x)\ge 0$ for all $x$
+1. $f(x) \ge 0$ for all $x$
 
 2. $\int_{-\infty}^{\infty} f(x)dx = 1$
 
@@ -47,4 +47,5 @@ a = 1
 b = 2
 xpnorm(q = c(a,b), mean = 0, sd = 1)
   
-```  
+```
+
