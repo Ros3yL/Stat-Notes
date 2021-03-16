@@ -323,4 +323,11 @@ $s \ge 0$
 
 ### sample variance = $s^2$
 
-added another test line
+Note
+\begin{equation*}
+\begin{split}
+    s^2 &= \sqrt{\frac{\sum\limits_{i=1}^{n} (x_i - \overline{x})^2}{n - 1}} = \frac{S_{xx}}{n - 1} \\[1.3ex]
+    &= \frac{\sum\limits_{i=1}^{n} x_i^2 - \frac{\left( \sum\limits_{i=1}^{n} x_i \right)^2 }{n}}{n - 1}
+\end{split}
+\end{equation*}
+Insert proof here if you want idc
