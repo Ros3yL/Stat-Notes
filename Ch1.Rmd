@@ -133,10 +133,9 @@ dotPlot(~BatAge, data = mlb16.data)
 ```
 
 ## Histograms
-\color{red} left blank for nick to fill in
-
-\color{black}
-
+```{r}
+histogram(~BatAge, data = mlb16.data)
+```
 ## Skewed (Right and left)
 \color{red} add a dataset to show?
 
