@@ -255,3 +255,72 @@ Notate
 - compromise b/n the mean & median
 
 - to find it, remove top & bottom $10\%$, then calculate the mean
+
+## categorical data
+
+- the natural way to numerically summarize categorical data is by finding the \underline{proportion} of successes and failures
+
+Notate
+
+### sample proportions : $\hat{p} = \dfrac{\text{\# of successes}}{n}$
+
+Notate
+
+Population proportions : $p =$ # of successes in the population
+
+Reporting a center of measure gives only partial info
+
+Sets mayh have similar means but differ in other ways
+
+A simple way to give more detail is to give the \underline{range}
+
+- def
+
+Range : max - min
+
+Deviations from the mean
+
+- a dev from the mean is the absolute diference (distance) b.n an observation and the mean
+ \[
+x_1 - \overline{x}, x_2 - \overline{x}, \ldots, x_n - \overline{x}
+\] 
+note 
+\[
+\sum\limits_{i=1}^{n} (x_i - \overline{x}) = 0
+\] 
+\color{red} proof (omitted to catch up)
+
+\color{black}
+
+- def
+
+Standard deviation = measure of how much an observation is expected to be from the mean
+
+Notate
+
+### population std. dev = $\sigma$
+
+Notate
+
+### sample std. dev =
+\[
+s = \sqrt{\frac{\sum\limits_{i=1}^{n} (x_i - \overline{x})^2}{n - 1}} 
+\] 
+$\sigma$ is interpreted as size of typical deviation from $\mu$ w/ entire pop. of x-values
+
+s has same units as data
+
+Note
+
+s is not resistant (strongly affected by outliers / skew b.c of $\overline{x}$ )
+
+$s \ge 0$ 
+
+- def
+
+### variance = $std.dev^2$ 
+
+### pop variance = $\sigma^2$ 
+
+### sample variance = $s^2$
+
