@@ -14,5 +14,21 @@ if (!require(mosaic)) install.packages("mosaic", repos = 'https://cloud.r-projec
 library(mosaic) # load the package mosaic to use its functions
 ```
 
-# 4.1
+# 4.1 Probabiility Density Functions
 
+* Def:
+
+A continuous RV is one in which each of the following is true
+
+  * the set of all possible values contains infinite number of possibilities on an interval of the real number line
+  
+  * no value has positive probability for all x
+
+
+\[
+P(a\leq X\leq b) = P(a< X\le b) = P(a\le X < b)
+\]
+
+  * The pdf can not be listed as a table due to the "number" of outcomes 
+  
+The pdf of a continuous random variable X
