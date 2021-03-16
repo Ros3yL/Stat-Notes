@@ -323,4 +323,75 @@ $s \ge 0$
 
 ### sample variance = $s^2$
 
-added another test line
+Note
+\begin{equation*}
+\begin{split}
+    s^2 &= \sqrt{\frac{\sum\limits_{i=1}^{n} (x_i - \overline{x})^2}{n - 1}} = \frac{S_{xx}}{n - 1} \\[1.3ex]
+    &= \frac{\sum\limits_{i=1}^{n} x_i^2 - \frac{\left( \sum\limits_{i=1}^{n} x_i \right)^2 }{n}}{n - 1}
+\end{split}
+\end{equation*}
+Insert proof here if you want idc
+
+- Ex
+
+Calculate variance of 26 19.9 17.8 31.4 38.6 28.7 25
+
+*insert table here if you want*
+
+\begin{equation*}
+\begin{split}
+    \sum x_i &= 187.4 \\[1.3ex]
+    \sum x_i^2 &= 5313.46 \\[1.3ex]
+    s^2 &= \frac{5313.46 - \frac{5313.46}{7}}{6} = 49.41571
+\end{split}
+\end{equation*}
+
+### Constant Multiplier 
+
+let $y_i = cx_i$, then
+
+\begin{equation*}
+\begin{split}
+    s^2y &= c^2s^2x \\
+    \overline{y} &= c \overline{x}
+\end{split}
+\end{equation*}
+
+### Addition of a Constant
+
+let $y_i = x_i + c$ 
+\begin{equation*}
+\begin{split}
+    s^2y &= s^2x \\
+    \overline{y} &= \overline{x} + c
+\end{split}
+\end{equation*}
+
+## InterQuartile Range 
+
+- also called $f_s$, fourth spread
+\[
+IQR = Q_3 - Q_1
+\] 
+- Def
+
+Outlier = an observation that is more than $1.5 \cdot IQR$ away from nearest quartile (end of box)
+
+### Mild Outlier : 
+
+  - Upper fence = $Q_3 + 1.5 \cdot IQR$ 
+
+  - Lower fence = $Q_1 - 1.5 \cdot IQR$ 
+
+### Extreme Outlier : 
+
+  - Upper fence = $Q_3 + 3 \cdot IQR$ 
+
+  - Lower fence = $Q_1 - 3 \cdot IQR$ 
+
+- Def
+
+### Modified BoxPlot : 
+- represents  **mild outliers** w/ **solid dots** & **extreme outliers** w/ **open circles**, w/ the whiskers extending to most extreme value that is not an outlier.
+
+---
