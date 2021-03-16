@@ -1,1 +1,5 @@
-added chapter 2
+---
+title: "Chapter 2"
+author: Logan | Nick
+output: github_document
+---
