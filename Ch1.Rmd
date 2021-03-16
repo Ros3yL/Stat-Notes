@@ -324,4 +324,3 @@ $s \ge 0$
 
 ### sample variance = $s^2$
 
-
