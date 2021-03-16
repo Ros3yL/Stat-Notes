@@ -1,7 +1,7 @@
 ---
-title: "Chapter 1"
+title: "Chapter 4"
 author: Logan | Nick
-output: github_document
+output: word_document
 fontsize: 12pt
 ---
 
@@ -11,6 +11,7 @@ knitr::opts_chunk$set(fig.width=6, fig.height=4, fig.align="center", echo = FALS
 
 ```{r message=FALSE}
 if (!require(mosaic)) install.packages("mosaic", repos = 'https://cloud.r-project.org')
+
 library(mosaic) # load the package mosaic to use its functions
 ```
 
@@ -31,4 +32,19 @@ P(a\leq X\leq b) = P(a< X\le b) = P(a\le X < b)
 
   * The pdf can not be listed as a table due to the "number" of outcomes 
   
-The pdf of a continuous random variable X
+The pdf of a continuous random variable X given by f(x) and has the following properties
+
+1. $f(x)\ge 0$ for all $x$
+
+2. $\int_{-\infty}^{\infty} f(x)dx = 1$
+
+3. $P(a \lt X \lt b) = \int_{a}^{b} f(x)dx $
+
+  * The graph of f(x) lies on or above x-axis
+  
+``` {r}
+a = 1
+b = 2
+xpnorm(q = c(a,b), mean = 0, sd = 1)
+  
+```  
