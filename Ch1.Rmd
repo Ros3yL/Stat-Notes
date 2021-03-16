@@ -1,6 +1,6 @@
 ---
 title: "Chapter 1"
-author: Logan | Nick
+author: "Logan | Nick"
 output: github_document
 fontsize: 12pt
 ---

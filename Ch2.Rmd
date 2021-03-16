@@ -1,6 +1,31 @@
 ---
 title: "Chapter 2"
-author: Logan | Nick
+author: "Logan | Nick"
 output: github_document
+fontsize: 12pt
 ---
-# hello world
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(fig.width=6, fig.height=4, fig.align="center", echo = FALSE)
+```
+
+```{r message=FALSE}
+if (!require(mosaic)) install.packages("mosaic", repos = 'https://cloud.r-project.org')
+library(mosaic) # load the package mosaic to use its functions
+```
+
+- Def
+
+Experiment : any activity / situation w/ uncertainty about which $x \ge 2$ outcomes are possible 
+
+- coin toss, roll a die, draw a card
+
+- Def
+
+#### Sample Space
+
+- collection of all possible outcomes of a chance experiment 
+
+Notate - s or $\mathcal{U}$
+
+- Toss a coin : heads or tails
