@@ -1,123 +1,123 @@
 ---
-title: "Chapter 1"
-author: Logan | Nick
+title: "chapter 1"
+author: "logan | nick"
 output: github_document
 fontsize: 12pt
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(fig.width=6, fig.height=4, fig.align="center", echo = FALSE)
+```{r setup, include=false}
+knitr::opts_chunk$set(fig.width=6, fig.height=4, fig.align="center", echo = false)
 ```
 
-```{r message=FALSE}
+```{r message=false}
 if (!require(mosaic)) install.packages("mosaic", repos = 'https://cloud.r-project.org')
 library(mosaic) # load the package mosaic to use its functions
 ```
 
-# 1.1 Populations, Samples, and Processes
+# 1.1 populations, samples, and processes
 
-Statistics provides methods for organizing and summarizing data and for drawing conclusions from that data
+statistics provides methods for organizing and summarizing data and for drawing conclusions from that data
 
-* Def
+* def
 
-Data : a collection of facts
+data : a collection of facts
 
-* Def
+* def
 
-Population : A well defined collection of objects for which we wish to obtain info
+population : a well defined collection of objects for which we wish to obtain info
 
-* Def
+* def
 
-Census : When desired info is obtained from every member of the population
+census : when desired info is obtained from every member of the population
 
- - problems : Time, money, practical
+ - problems : time, money, practical
 
-* Def
+* def
 
-Sample : A subset of the population
+sample : a subset of the population
 
 1. 
 
-You want the home price in Edwardsville
+you want the home price in edwardsville
 
- - Fewer well trained appraisers gives better results than many poorly trained 
+ - fewer well trained appraisers gives better results than many poorly trained 
 
-2. Tree Age Study
+2. tree age study
 
-Testing is destructive, so a sample is better
+testing is destructive, so a sample is better
 
-* Def
+* def
 
 variable : any characteristic whose clue may differ from one subject to another.
 
  - denote with low letters
 
-**Note** 
+**note** 
     
-    - Don't say $McDonald's = 10$
+    - don't say $mcdonald's = 10$
       
-    - Do say $x =$ the length of the tibia bone in 10 year old boys.
+    - do say $x =$ the length of the tibia bone in 10 year old boys.
 
-* Def
+* def
 
 univariate data : result from making observations of 1 variable
 
  - these variable can be qualitative / quantitative
 
-* Def
+* def
 
-Bivariate data : when observations are made on each of 2 variables for each individual 
+bivariate data : when observations are made on each of 2 variables for each individual 
 
  - (weight.mpg) of cars
 
-* Def
+* def
 
-Multivariate data : observations made on many variables
+multivariate data : observations made on many variables
 
  - patient data
 
 
-* Ex
+* ex
 
-Labor force, sample 60,000, find population  + sample
+labor force, sample 60,000, find population  + sample
 
  - population = labor force, sample size = 60,000 households
 
-## Branches of Stats
-1. Descriptive Stats : data are collected and you wish to summarize and describe features of the data (graphs, numerical summaries)
+## branches of stats
+1. descriptive stats : data are collected and you wish to summarize and describe features of the data (graphs, numerical summaries)
 
-2. Inferential stats : data is collected from a sample and used to draw a conclusion about the population
+2. inferential stats : data is collected from a sample and used to draw a conclusion about the population
 
     - confidence intervals, hypothesis test, prediction, etc...
 
-## Types of sampling
+## types of sampling
 
-- Simple random sampling : random choice / draw of the hat sampling
+- simple random sampling : random choice / draw of the hat sampling
 
-- Systematic sampling : selecting every $k^{th}$ member of the population
+- systematic sampling : selecting every $k^{th}$ member of the population
 
-- Cluster sampling : divide population into groups, then select some of these groups @ random
+- cluster sampling : divide population into groups, then select some of these groups @ random
 
-- Stratified sampling : divide population into groups. Find subgroups of groups (strata) and then draw random sample in strata
+- stratified sampling : divide population into groups. find subgroups of groups (strata) and then draw random sample in strata
 
-- Convenience sampling : sampling in the most convenient way 
+- convenience sampling : sampling in the most convenient way 
   - best to avoid , but a good starter
 
-## Notate
+## notate
 
 ### sample size : $n$
 
- - For a dataset with $n$ observations on some variable $x$, the individual observations will be denoted as $x_1, x_2, \ldots, x_n$.
+ - for a dataset with $n$ observations on some variable $x$, the individual observations will be denoted as $x_1, x_2, \ldots, x_n$.
 
 # 1.2 
 
-## Stem and leaf plots 
+## stem and leaf plots 
 
-* Ex
+* ex
 
 $(54, 59, 35, 41, 46, 25, 47, 60, 54, 46, 49, 46, 41, 34, 22)$
 
-During these problems it helps to first orgranize the numebrs in the list first
+during these problems it helps to first orgranize the numebrs in the list first
 \begin{align*}
     2 &\mid 2, 5 \\
     3 &\mid 4, 5 \\
@@ -126,29 +126,29 @@ During these problems it helps to first orgranize the numebrs in the list first
     6 &\mid 0
 \end{align*}
 
-## Dot plots
+## dot plots
 ```{r}
-mlb16.data <- read.csv("https://raw.githubusercontent.com/jpailden/rstatlab/master/data/MLB-TeamBatting-S16.csv")
-dotPlot(~BatAge, data = mlb16.data)
+mlb16.data <- read.csv("https://raw.githubusercontent.com/jpailden/rstatlab/master/data/mlb-teambatting-s16.csv")
+dotplot(~batage, data = mlb16.data)
 ```
 
-## Histograms
+## histograms
 \color{red} left blank for nick to fill in
 
 \color{black}
 
-## Skewed (Right and left)
+## skewed (right and left)
 \color{red} add a dataset to show?
 
 \color{black}
 
 
-## Bell
+## bell
 \color{red} add a dataset to show?
 
 \color{black}
 
-## Flat uniform
+## flat uniform
 \color{red} add a dataset to show?
 
 \color{black}
@@ -165,93 +165,162 @@ dotPlot(~BatAge, data = mlb16.data)
 
 # 1.3
 
-* Def
+* def
 
 mean : numerical value of average
 
-Notate 
+notate 
 
-### Sample mean : $\overline{x}$
+### sample mean : $\overline{x}$
 \[
 \overline{x} = \frac{x_1 + x_2 + \ldots + x_n}{n} = \frac{\sum\limits_{i=1}^{n} x_i}{n}
 \] 
 
-Notate
+notate
 
-### Population mean : $\mu$
+### population mean : $\mu$
 
 - avg of all values in the entire pop. 
 
-* Ex
+* ex
 
 $2, 2, 5, 3, 8, 9, 2, 3, 1$
  \[
 \overline{x} = \frac{\sum\limits_{i=1}^{10} x_i}{10} = 3.6
 \] 
 
-The mean is inappropriate in some cases b/c of outliers.
+the mean is inappropriate in some cases b/c of outliers.
 
 - this makes the mean a **nonresistant measure**  
 
-* Def
+* def
 
-Median : middle value /avg of 2 middle values when sorted
+median : middle value /avg of 2 middle values when sorted
 
-Notate
+notate
 
-Median : $\widetilde{x}$ 
+median : $\widetilde{x}$ 
 
 - if $n = odd$, median is at $\dfrac{n + 1}{2}$ 
 
 - if $n = even$ median are b/n $\dfrac{n}{2}$ & $\dfrac{n + 1}{2}$ 
 
-Notate
+notate
 
-Population Mean : $\widetilde{\mu}$
+population mean : $\widetilde{\mu}$
 
-# 1.4 Measures of Variability
+# 1.4 measures of variability
 
-One way to describe a distribution is by using the standard deviation
+one way to describe a distribution is by using the standard deviation
 
-## Quartiles
+## quartiles
 
--  $Q_1$ - lower quartile separates bottom $25\%$
--  $Q_2$ - median middle $50\%$
--  $Q_3$ - upper quartile separates upper $25\%$
+-  $q_1$ - lower quartile separates bottom $25\%$
+-  $q_2$ - median middle $50\%$
+-  $q_3$ - upper quartile separates upper $25\%$
 
-* Ex
+* ex
 
 2, 2, 5, 1, 3, 8, 9, 2, 31
 
-SORT
+sort
 \begin{align*}
     1, 1, 2, 2, 2 \\
     3, 3, 5, 8, 9
 \end{align*}
 $\widetilde{x} = 2 + 3 = 2.5$
 
-## Five number summary
+## five number summary
 
-- Find min, $Q_1$, median, $Q_3$, max
+- find min, $q_1$, median, $q_3$, max
 
-Note : If median is found in list, use it in both top half and lower half.
+note : if median is found in list, use it in both top half and lower half.
 
-Ex : 2 2 5 1 3 8 9 2 3 1 100
+ex : 2 2 5 1 3 8 9 2 3 1 100
 
 $\overline{x} = \frac{36 + 100}{11} \approx 12.36$ 
 
-Sort to find median. $\widetilde{x} = 3$.
+sort to find median. $\widetilde{x} = 3$.
 
-## Mean vs. Median
+## mean vs. median
 
 - median is the equal parts point
 
 - mean is the balance point
 
-Notate
+notate
 
-### Trimmed mean : $\overline{x}_{tr}$
+### trimmed mean : $\overline{x}_{tr}$
  
 - compromise b/n the mean & median
 
 - to find it, remove top & bottom $10\%$, then calculate the mean
+
+## categorical data
+
+- the natural way to numerically summarize categorical data is by finding the \underline{proportion} of successes and failures
+
+notate
+
+### sample proportions : $\hat{p} = \dfrac{\text{\# of successes}}{n}$
+
+notate
+
+population proportions : $p =$ # of successes in the population
+
+reporting a center of measure gives only partial info
+
+sets mayh have similar means but differ in other ways
+
+a simple way to give more detail is to give the \underline{range}
+
+- def
+
+range : max - min
+
+deviations from the mean
+
+- a dev from the mean is the absolute diference (distance) b.n an observation and the mean
+ \[
+x_1 - \overline{x}, x_2 - \overline{x}, \ldots, x_n - \overline{x}
+\] 
+note 
+\[
+\sum\limits_{i=1}^{n} (x_i - \overline{x}) = 0
+\] 
+\color{red} proof (omitted to catch up)
+
+\color{black}
+
+- def
+
+standard deviation = measure of how much an observation is expected to be from the mean
+
+notate
+
+### population std. dev = $\sigma$
+
+notate
+
+### sample std. dev =
+\[
+s = \sqrt{\frac{\sum\limits_{i=1}^{n} (x_i - \overline{x})^2}{n - 1}} 
+\] 
+$\sigma$ is interpreted as size of typical deviation from $\mu$ w/ entire pop. of x-values
+
+s has same units as data
+
+note
+
+s is not resistant (strongly affected by outliers / skew b.c of $\overline{x}$ )
+
+$s \ge 0$ 
+
+- def
+
+### variance = $std.dev^2$ 
+
+### pop variance = $\sigma^2$ 
+
+### sample variance = $s^2$
+
