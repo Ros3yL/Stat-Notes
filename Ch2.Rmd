@@ -29,3 +29,16 @@ Experiment : any activity / situation w/ uncertainty about which $x \ge 2$ outco
 Notate - s or $\mathcal{U}$
 
 - Toss a coin : heads or tails
+
+- Def
+
+#### Event : 
+- any collection of outcomes from a sample space of a chance experiment
+
+Notate
+
+CAP letters : $A, B, C, \ldots$ 
+
+- Def
+
+
