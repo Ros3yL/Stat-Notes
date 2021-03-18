@@ -14,15 +14,15 @@ if (!require(mosaic)) install.packages("mosaic", repos = 'https://cloud.r-projec
 library(mosaic) # load the package mosaic to use its functions
 ```
 
-- Def
+##### Def
 
 Experiment : any activity / situation w/ uncertainty about which $x \ge 2$ outcomes are possible 
 
 - coin toss, roll a die, draw a card
 
-- Def
+##### Def
 
-#### Sample Space
+### Sample Space
 
 - collection of all possible outcomes of a chance experiment 
 
@@ -30,15 +30,72 @@ Notate - s or $\mathcal{U}$
 
 - Toss a coin : heads or tails
 
-- Def
+##### Def
 
 #### Event : 
+
 - any collection of outcomes from a sample space of a chance experiment
 
 Notate
 
 CAP letters : $A, B, C, \ldots$ 
 
-- Def
+##### Def
 
+Simple Event : event that consists of \underline{one} outcome
+
+Compound Event : event that consists of \underline{more than one} outcome
+
+##### Ex
+
+Tennis : A tennis shop carries 5 brands of rackets (Head, Prince, Sazenger, Wimbledon, Wilson). Each racket comes in midsize / oversize
+
+a. sample space
+
+*insert diagram here*
+
+b. Let A be the event an oversized racket is piurchased
+\[
+A = \{HO, PO, SO, WimO, WilO\}
+\] 
+
+c. Let B be the event the name brand starts w/ a W
+\[
+ B = \{ WimM, WimO, WilM, WilO \}
+\] 
+
+### Forming New Sets
+
+ Let A and B be any 2 events
+
+##### Def
+
+ Complement of A : 
+
+ - all outcomes in S, not in A
+
+##### Notate
+
+$A^{\prime}, \overline{A}, A^c$
+
+##### Notate
+
+union - A or B - inclusive
+\[
+A \cup B
+\] 
+
+intersection - A and B
+\[
+A \cap B
+\] 
+
+##### Ex 
+
+Tennis Cont.
+
+d. $\overline{B} =$ brand does not start w/ W
+\[
+    \overline{B} = \{ HO, HM, PO, PM, SO, SM \}
+\]
 
