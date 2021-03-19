@@ -14,6 +14,8 @@ if (!require(mosaic)) install.packages("mosaic", repos = 'https://cloud.r-projec
 library(mosaic) # load the package mosaic to use its functions
 ```
 
+# 2.1
+
 ##### Def
 
 Experiment : any activity / situation w/ uncertainty about which $x \ge 2$ outcomes are possible 
@@ -99,3 +101,57 @@ d. $\overline{B} =$ brand does not start w/ W
     \overline{B} = \{ HO, HM, PO, PM, SO, SM \}
 \]
 
+e. Head, Prince, and Wilson are US companies. Let C define rackets from the U.S.
+\begin{equation*}
+\begin{split}
+    C &= \{ HO, HM, PO, PM, WilO, WilM \} \\
+    B \cup C &=  \{ HO, HM, PO, PM, WilO, WilM, WimO, WimM \}
+\end{split}
+\end{equation*}
+
+f. List outcomes in $B \cap C$.
+\[
+B \cap C = \{ WilO, WilM \}
+\] 
+g. $\overline{(B \cap C)} = \{ HO, HM, PO, PM, WimO, WimM \}$
+
+
+### Two Mutually Exclusive Events
+
+##### Def
+
+mutually exclusive : no outcomes in common
+
+
+##### Def
+
+Disjoint : no outcomes in common
+
+*include figure here*
+
+##### Note
+
+If A and B are disjoint, $A \cap B = \emptyset$
+
+*include figure here*
+
+##### Ex
+
+\begin{equation*}
+\begin{split}
+    A &= \{ 4, 6, 8, 10, 12 \} \quad B = \{ 8, 10, 12, 14 \} \quad C = \{ 12, 14, 16 \} \quad D = \{ 16, 18 \} \\
+    A \cap B &= \{ 8, 10, 12 \} \\
+    B \cap C &= \{ 12, 14 \} \\
+    A \cap (C \cap D) &= A \cap \{ 16 \} = \emptyset \\
+    A \cap C &= \{ 12 \} \\
+    B \cap D &= \{ \} = \emptyset \\
+    (A \cap B) \cup C &= \{ 8, 10, 12 \} \cup C = \{ 8, 10, 12, 14, 16 \} \\
+    (A \cap B) \cup (B \cap C) &= \{ 8, 10, 12 \} \cup \{ 12, 14 \} = \{ 8, 10, 12, 14 \}
+\end{split}
+\end{equation*}
+
+# 2.2 Classical Probability
+
+- N equal likely outcomes
+
+- each outcome has probability $\frac{1}{N}$
