@@ -154,4 +154,149 @@ If A and B are disjoint, $A \cap B = \emptyset$
 
 - N equal likely outcomes
 
-- each outcome has probability $\frac{1}{N}$
+- each outcome has probability $\frac{1}{N}$.
+
+##### Notate
+
+$P(E)$ is the probability of event $E$ 
+
+\[
+P(E) = \frac{\text{\# of distinct outcomes in E}}{\text{\# of outcomes in sample space}}
+\] 
+
+### Empirical Probability
+
+- conduct a chance experiment and count the \# of times E occurs
+
+- N is the \# of times the experiment was conducted
+
+\underline{Estimate} of $P(E) = \dfrac{ \text{\# of times E occurs} }{N}$ 
+
+## Law of Large Number's : 
+
+As the number of repetitions of an experiment increases, the chance that the relative frequency of occurrences of an event will differ from the true probability of an event approaches 0.
+
+- Problem : How large is large enough?
+
+##### Note : 
+
+long run stabilization will also occur
+
+*insert graph here*
+
+## Subjective Probability
+
+- a personal measure / belief
+
+  - can be based on evaluation of facts & personal experience
+
+##### Ex
+
+At a hospital, there were $645$ boys born and $721$ girls born
+
+a. Find : experimental probability of having a girl
+\[
+P(girl) = \frac{721}{645 + 721} \approx .53 = 53 \%
+\] 
+b. John is @ a cookout and wants to get a drink from the cooler. The cooler contains 12 sodas, 10 waters, & 5 beers.
+- Find P(water)
+\[
+P(water) = \frac{10}{12 + 10 + 5} \approx .37 = 37 \%
+\]
+c. 2 dive rolls : what is $P(second roll > 1^{st} roll)$ 
+
+- using drawing of all probabilities $P(2^{nd} > 1^{st}) = 15 / 36 \approx .42 = 42 \%$
+
+## Basic Properties
+
+1. For any event, the probability it will occur is b/n 0 and 1
+
+2. If $S(Sample space)$, then $P(S) = 1$ 
+
+3. $P(\emptyset) = 0$ 
+
+4. If 2 events $A$ & $B$ are \underline{mutually exclusive}, then $P(A \cup B) = P(A) + P(B)$
+
+5. For any event, $E$, the $P(E) + P( \overline{E} ) = 1$
+   - $P( \overline{E} ) = 1 - P(E)$ & $P(E) = 1 - P(\overline{E})$
+
+##### Ex
+
+1. $P( \text{ roll 2 die \& not get doubles }) = 1 - P( \text{ roll doubles } ) = 1 - \frac{6}{36} = 5/6 \approx .83$
+
+2. Find the probability of drawing a Jack or a diamond from a standard 52 card deck
+\[
+P(J \cup \diamondsuit) = P( \diamondsuit ) + P(J) - P(J \cap \diamondsuit) = \frac{13 + 4 - 1}{52} = \frac{16}{52}
+\] 
+
+##### Note
+
+$P(J \cup \diamondsuit) \ne P( \diamondsuit ) + P(J)$
+
+3. When rolling 2 die, what is prob. of rolling @ most 1 even number?
+\[
+P( \text{@ most one even} ) = 1 - P( \text{both even} ) = 1 - 9/36 = .75
+\] 
+
+## Union
+
+If $A_1, A_2, \ldots, A_n$ is a collection of disjoint (mutually exclusive) events, then 
+\[ 
+P(A_1, A_2, \ldots, A_n) = \sum\limits_{i=1}^{\infty} P(A_i) 
+\]
+
+##### Ex
+
+\begin{table}[h]
+    \centering
+    \label{tab:label}
+    \begin{tabular}{c | c | c | c | c | c | c}
+    \# of CD's purchased & 1 & 2 & 3 & 4 & 5 & 6+ \\
+    \hline
+    prob & .45 & .25 & .1 & .1 & .07 & .03
+    \end{tabular}
+\end{table}
+
+a. $P(CD \le 3) = P(1) + P(2) + P(3) = .45 + .25 + .1 = .8$ 
+
+b. Prob the next purchase is at most 3 CD's $= P(\# \le 3) P(1) + P(2) + P(3) = .45 + .25 + .1 = .8$
+
+c. What is the prob the next customer buys 5 or more $= P(\# \ge 5) = .07 + .03 = .1$
+
+d. What is $P(\# \ge 2)$ and what does it represent?
+\[
+P(\# \ge 2) = 1 - P(1) = 1 - .45 = .55
+,\] which is the event the next customer buys 2 or more CD's
+
+##### Def
+
+General Addition Rule
+\begin{equation*}
+\begin{split}
+    P(A \cup B) &= P(A) + P(B) - P(A \cap B) \\
+    P(A \cup B \cup C) &= P(A) + P(B) + P(C) - P(A \cap B) - P(B \cap C) - P(A \cap C) + P(A \cap B \cap C)
+\end{split}
+\end{equation*}
+
+*insert graph here*
+
+# 2.3
+
+For a multistage experiment w/ $n$ stages where the first stage has $k_1$ outcomes, the second $k_2$ outcomes, $\ldots$, the total number of possible outcomes for the sequence is the multiplication rule.
+
+## Multiplication Rule
+ \[
+k_1 \cdot k_2 \cdot \ldots \cdot k_n
+\] 
+
+##### Ex
+
+Determine \# of 5 digit zip codes (digits repeat, first can't be 0)
+
+\begin{equation*}
+\begin{split}
+    \frac{9 \text{ choices (1 - 9) }}{1^{st} \text{ digit}} &\cdot \frac{10 \text{ (0 - 9) }}{2^{nd} \text{ digit}} \cdot \frac{10 \text{ (0 - 9) }}{3^{rd} \text{ digit}} \cdot \frac{10 \text{ (0 - 9) }}{4^{th} \text{ digit}} \cdot \frac{10 \text{ (0 - 9) }}{5^{th} \text{ digit}} \\
+    9 &\cdot 10 \cdot 10 \cdot 10 \cdot 10
+\end{split}
+\end{equation*}
+
