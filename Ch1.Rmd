@@ -169,9 +169,10 @@ mean : numerical value of average
 Notate 
 
 ### Sample mean : $\overline{x}$
-\[
+
+\begin{equation*}
 \overline{x} = \frac{x_1 + x_2 + \ldots + x_n}{n} = \frac{\sum\limits_{i=1}^{n} x_i}{n}
-\] 
+\end{equation*}
 
 Notate
 
@@ -182,9 +183,10 @@ Notate
 ##### Ex
 
 $2, 2, 5, 3, 8, 9, 2, 3, 1$
- \[
+
+\begin{equation*} 
 \overline{x} = \frac{\sum\limits_{i=1}^{10} x_i}{10} = 3.6
-\] 
+\end{equation*}
 
 The mean is inappropriate in some cases b/c of outliers.
 
@@ -278,13 +280,17 @@ Range : max - min
 Deviations from the mean
 
 - a dev from the mean is the absolute diference (distance) b.n an observation and the mean
- \[
+
+\begin{equation*}
 x_1 - \overline{x}, x_2 - \overline{x}, \ldots, x_n - \overline{x}
-\] 
+\end{equation*}
+
 note 
-\[
+
+\begin{equation*}
 \sum\limits_{i=1}^{n} (x_i - \overline{x}) = 0
-\] 
+\end{equation*}
+
 \color{red} proof (omitted to catch up)
 
 \color{black}
@@ -300,9 +306,12 @@ Notate
 Notate
 
 ### sample std. dev =
-\[
-s = \sqrt{\frac{\sum\limits_{i=1}^{n} (x_i - \overline{x})^2}{n - 1}} 
-\] 
+\begin{equation*}
+\begin{split}
+    s = \sqrt{\frac{\sum\limits_{i=1}^{n} (x_i - \overline{x})^2}{n - 1}} 
+\end{split}
+\end{equation*}
+
 $\sigma$ is interpreted as size of typical deviation from $\mu$ w/ entire pop. of x-values
 
 s has same units as data
@@ -368,9 +377,10 @@ let $y_i = x_i + c$
 ## InterQuartile Range 
 
 - also called $f_s$, fourth spread
-\[
+
+\begin{equation*}
 IQR = Q_3 - Q_1
-\] 
+\end{equation*}
 
 ##### Def
 
