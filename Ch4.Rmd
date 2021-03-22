@@ -25,13 +25,6 @@ A continuous RV is one in which each of the following is true
   
   * no value has positive probability for all x
 
-<<<<<<< HEAD
-=======
-\[
-yui
-\]
-
->>>>>>> 23311da6c00b756a51821be0379c88b9583fa095
 \begin{equation*}
     P(a \le X \le b) = P(a < X \le b) = P(a \le X < b)
 \end{equation*}
