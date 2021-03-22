@@ -1,7 +1,7 @@
 ---
 title: "Chapter 2"
 author: "Logan | Nick"
-output: github_document
+output: pdf_document
 fontsize: 12pt
 ---
 
@@ -57,14 +57,19 @@ a. sample space
 *insert diagram here*
 
 b. Let A be the event an oversized racket is piurchased
-\[
-A = \{HO, PO, SO, WimO, WilO\}
-\] 
+\begin{equation*}
+\begin{split}
+    A = \{HO, PO, SO, WimO, WilO\}
+\end{split}
+\end{equation*}
 
 c. Let B be the event the name brand starts w/ a W
-\[
- B = \{ WimM, WimO, WilM, WilO \}
-\] 
+
+\begin{equation*}
+\begin{split}
+    B = \{ WimM, WimO, WilM, WilO \}
+\end{split}
+\end{equation*}
 
 ### Forming New Sets
 
@@ -83,23 +88,30 @@ $A^{\prime}, \overline{A}, A^c$
 ##### Notate
 
 union - A or B - inclusive
-\[
-A \cup B
-\] 
+
+\begin{equation*}
+\begin{split}
+    A \cup B
+\end{split}
+\end{equation*}
 
 intersection - A and B
-\[
-A \cap B
-\] 
+\begin{equation*}
+\begin{split}
+    A \cap B
+\end{split}
+\end{equation*}
 
 ##### Ex 
 
 Tennis Cont.
 
 d. $\overline{B} =$ brand does not start w/ W
-\[
+\begin{equation*}
+\begin{split}
     \overline{B} = \{ HO, HM, PO, PM, SO, SM \}
-\]
+\end{split}
+\end{equation*}
 
 e. Head, Prince, and Wilson are US companies. Let C define rackets from the U.S.
 \begin{equation*}
@@ -110,9 +122,13 @@ e. Head, Prince, and Wilson are US companies. Let C define rackets from the U.S.
 \end{equation*}
 
 f. List outcomes in $B \cap C$.
-\[
-B \cap C = \{ WilO, WilM \}
-\] 
+
+\begin{equation*}
+\begin{split}
+    B \cap C = \{ WilO, WilM \}
+\end{split}
+\end{equation*}
+
 g. $\overline{(B \cap C)} = \{ HO, HM, PO, PM, WimO, WimM \}$
 
 
@@ -160,9 +176,11 @@ If A and B are disjoint, $A \cap B = \emptyset$
 
 $P(E)$ is the probability of event $E$ 
 
-\[
-P(E) = \frac{\text{\# of distinct outcomes in E}}{\text{\# of outcomes in sample space}}
-\] 
+\begin{equation*}
+\begin{split}
+    P(E) = \frac{\text{\# of distinct outcomes in E}}{\text{\# of outcomes in sample space}}
+\end{split}
+\end{equation*}
 
 ### Empirical Probability
 
@@ -195,14 +213,21 @@ long run stabilization will also occur
 At a hospital, there were $645$ boys born and $721$ girls born
 
 a. Find : experimental probability of having a girl
-\[
-P(girl) = \frac{721}{645 + 721} \approx .53 = 53 \%
-\] 
+
+\begin{equation*}
+\begin{split}
+    P(girl) = \frac{721}{645 + 721} \approx .53 = 53 \%
+\end{split}
+\end{equation*}
+
 b. John is @ a cookout and wants to get a drink from the cooler. The cooler contains 12 sodas, 10 waters, & 5 beers.
 - Find P(water)
-\[
-P(water) = \frac{10}{12 + 10 + 5} \approx .37 = 37 \%
-\]
+\begin{equation*}
+\begin{split}
+    P(water) = \frac{10}{12 + 10 + 5} \approx .37 = 37 \% 
+\end{split}
+\end{equation*}
+
 c. 2 dive rolls : what is $P(second roll > 1^{st} roll)$ 
 
 - using drawing of all probabilities $P(2^{nd} > 1^{st}) = 15 / 36 \approx .42 = 42 \%$
@@ -225,25 +250,38 @@ c. 2 dive rolls : what is $P(second roll > 1^{st} roll)$
 1. $P( \text{ roll 2 die \& not get doubles }) = 1 - P( \text{ roll doubles } ) = 1 - \frac{6}{36} = 5/6 \approx .83$
 
 2. Find the probability of drawing a Jack or a diamond from a standard 52 card deck
-\[
-P(J \cup \diamondsuit) = P( \diamondsuit ) + P(J) - P(J \cap \diamondsuit) = \frac{13 + 4 - 1}{52} = \frac{16}{52}
-\] 
+
+\begin{equation*}
+\begin{split}
+    P(J \cup \diamondsuit) = P( \diamondsuit ) + P(J) - P(J \cap \diamondsuit) = \frac{13 + 4 - 1}{52} = \frac{16}{52}
+\end{split}
+\end{equation*}
 
 ##### Note
-
-$P(J \cup \diamondsuit) \ne P( \diamondsuit ) + P(J)$
+\begin{equation*}
+\begin{split}
+    P(J \cup \diamondsuit) \ne P( \diamondsuit ) + P(J)
+\end{split}
+\end{equation*}
 
 3. When rolling 2 die, what is prob. of rolling @ most 1 even number?
-\[
-P( \text{@ most one even} ) = 1 - P( \text{both even} ) = 1 - 9/36 = .75
-\] 
+
+\begin{equation*}
+\begin{split}
+    P( \text{@ most one even} ) = 1 - P( \text{both even} ) = 1 - 9/36 = .75
+\end{split}
+\end{equation*}
 
 ## Union
 
 If $A_1, A_2, \ldots, A_n$ is a collection of disjoint (mutually exclusive) events, then 
-\[ 
-P(A_1, A_2, \ldots, A_n) = \sum\limits_{i=1}^{\infty} P(A_i) 
-\]
+
+\begin{equation*}
+\begin{split}
+    P(A_1, A_2, \ldots, A_n) = \sum\limits_{i=1}^{\infty} P(A_i) 
+\end{split}
+\end{equation*}
+
 
 ##### Ex
 
@@ -264,9 +302,12 @@ b. Prob the next purchase is at most 3 CD's $= P(\# \le 3) P(1) + P(2) + P(3) = 
 c. What is the prob the next customer buys 5 or more $= P(\# \ge 5) = .07 + .03 = .1$
 
 d. What is $P(\# \ge 2)$ and what does it represent?
-\[
-P(\# \ge 2) = 1 - P(1) = 1 - .45 = .55
-,\] which is the event the next customer buys 2 or more CD's
+\begin{equation*}
+\begin{split}
+    P(\# \ge 2) = 1 - P(1) = 1 - .45 = .55,
+\end{split}
+\end{equation*}
+which is the event the next customer buys 2 or more CD's
 
 ##### Def
 
@@ -285,9 +326,12 @@ General Addition Rule
 For a multistage experiment w/ $n$ stages where the first stage has $k_1$ outcomes, the second $k_2$ outcomes, $\ldots$, the total number of possible outcomes for the sequence is the multiplication rule.
 
 ## Multiplication Rule
- \[
-k_1 \cdot k_2 \cdot \ldots \cdot k_n
-\] 
+
+\begin{equation*}
+\begin{split}
+    k_1 \cdot k_2 \cdot \ldots \cdot k_n
+\end{split}
+\end{equation*}
 
 ##### Ex
 
@@ -299,4 +343,15 @@ Determine \# of 5 digit zip codes (digits repeat, first can't be 0)
     9 &\cdot 10 \cdot 10 \cdot 10 \cdot 10
 \end{split}
 \end{equation*}
+
+##### Ex
+
+odd six digit pins if digits can't be repeated
+
+\begin{equation*}
+\begin{split}
+    5 \cdot 6 \cdot 7 \cdot 8 \cdot 9 \cdot 5 \Leftarrow \text{5th digit must be odd}
+\end{split}
+\end{equation*}
+
 
