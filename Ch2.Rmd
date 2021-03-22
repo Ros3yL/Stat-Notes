@@ -58,17 +58,13 @@ a. sample space
 
 b. Let A be the event an oversized racket is piurchased
 \begin{equation*}
-\begin{split}
     A = \{HO, PO, SO, WimO, WilO\}
-\end{split}
 \end{equation*}
 
 c. Let B be the event the name brand starts w/ a W
 
 \begin{equation*}
-\begin{split}
     B = \{ WimM, WimO, WilM, WilO \}
-\end{split}
 \end{equation*}
 
 ### Forming New Sets
