@@ -3,6 +3,8 @@ title: "Chapter 1"
 author: "Logan | Nick"
 output: github_document
 fontsize: 12pt
+header-includes:
+   - \usepackage{float}
 ---
 
 ```{r setup, include=FALSE}
@@ -14,3 +16,98 @@ if (!require(mosaic)) install.packages("mosaic", repos = 'https://cloud.r-projec
 library(mosaic) # load the package mosaic to use its functions
 ```
 
+```{r}
+library(float)
+```
+
+
+#5.3, 5.4 Estimation
+
+#### Def 
+
+Parameter : a numerical value that describes the population. This value is \underline{fixed but often unknown in practice}.
+
+#### Def
+
+Statistic : a numerical value that describes a sample
+
+- known from sample data
+
+- varies from sample to sample
+
+- use it to estimate the parameter
+
+- use cap letters to denote R.V.
+
+  - $\overline{X}$ is used for the sample mean R.V.
+
+- use lower case letters to denote a calculated value of the statistic 
+
+  - $\overline{x}$ is used for a specific value of the sample mean
+
+#### Def 
+
+The R.V.'s $X_1, X_2, \ldots, X_n$ are said to form a simple random sample of size $n$. If 
+
+1. The $X_i$'s are independent R.V's
+
+2. Every $X_i$ has the same probability distribution
+
+   - independent and identically distributed (iid.)
+
+The idea of a sampling distribution
+
+1. a random sample is selected from a population
+
+2. A statistic is calculated from the random data
+
+   - a statistic is random as it arises from sample to sample according to random selection
+
+   - the distribution of the statistic is called \underline{sampling distribution}
+
+   - the sampling distribution describes all possible values of the statistic and the probability (likelihood) of those values
+
+#### Ex
+
+Let X be the \# of packages being mailed by a random customer.
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{c | c | c | c | c}
+    $x$ & 1 & 2 & 3 & 4 \\
+    \hline
+    $p(x)$ & .4 & .3 & .2 & .1
+    \end{tabular}
+\end{table}
+
+a. Consider a random sample of size $n = 2$. Let $\overline{X}$ be the \# of packages shipped.
+
+Obtain the pdf of $\overline{X}$
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{c | c | c | c}
+    $x_1$ & $x_2$ & $p(x_1, x_2)$ & $\overline{x}$ \\
+    \hline
+    1 & 1 & $.4 * .4 = .16$ & $\cfrac{1 + 1}{2} = 1$ \\[1.7ex]
+    1 & 2 & $.4 * .3 = .12$ & $\cfrac{1 + 2}{2} = 1.5$ \\[1.7ex]
+    1 & 3 & $.4 * .2 = .08$ & $2$ \\[1.2ex]
+    1 & 4 & $.4 * .1 = .04$ & $2.5$ \\[1.2ex]
+    \hline
+    2 & 1 & .12 & 1.5 \\[0.5ex]
+    2 & 2 & .09 & 2 \\[0.5ex]
+    2 & 3 & .06 & 2.5 \\[0.5ex]
+    2 & 4 & .03 & 3 \\[0.5ex]
+    \hline
+    \vdots & \vdots & \vdots & \vdots 
+    \end{tabular}
+\end{table}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{c | c | c | c | c | c | c | c}
+    $\overline{x}$ & 1 & 1.5 & 2 & 2.5 & 3 & 3.5 & 4 \\
+    \hline
+    $p(\overline{x})$ & .16 & .24 & .25 & .2 & .1 & .04 & .01 \\
+    \end{tabular}
+\end{table}
+
+b. $P( \overline{x} \le 2.5) = .16 + .24 + .25 + .2 = .85$
