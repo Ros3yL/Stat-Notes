@@ -1,4 +1,4 @@
-![](figs/Title.pdf "STAT 380")
+![](/figs/Title.pdf "STAT 380")
 
 # Stat-Notes
 
