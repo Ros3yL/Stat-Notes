@@ -111,3 +111,30 @@ Obtain the pdf of $\overline{X}$
 \end{table}
 
 b. $P( \overline{x} \le 2.5) = .16 + .24 + .25 + .2 = .85$
+
+c. Find $E(\overline{X} = \sum \overline{x}p(\overline{x}) = 2$
+
+#### Note
+
+$E(X) = 2$ 
+
+### Properties of the Sample Mean
+
+Let $X_1, \ldots, X_n$ be simple random sample from a population with mean $\mu$ and standard deviation $\sigma$.
+
+* $E(\overline{x}) = \mu_{\overline{x}} = \ldots = \mu$
+
+* The variance of $\overline{X}$ is 
+\begin{equation*}
+    \sigma^2 / n = Var(\overline{X})
+\end{equation*}
+
+
+*insert proof here*
+
+So the standard deviation of $\overline{X}$ is 
+
+\begin{equation*}
+    \sigma_{\overline{X}} = \frac{\sigma_{x}}{\sqrt{n}} = \frac{\sigma}{\sqrt{n}}
+\end{equation*}
+
