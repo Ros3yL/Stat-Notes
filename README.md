@@ -1,4 +1,4 @@
-[![Title Image](https://github.com/Ros3yL/stat-notes/blob/master/figs/Title.png "STAT 380")]
+[![STAT 380](figs/Title.png)](#)
 
 # Stat-Notes
 
