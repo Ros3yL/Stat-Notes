@@ -1,4 +1,4 @@
-[![STAT 380](figs/Title.png)](#)
+![STAT 380](figs/Title.png){:height="50%" width="50%"}
 
 # Stat-Notes
 
